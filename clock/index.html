@@ -1,0 +1,85 @@
+<!--
+CODED BY FERNANDO MACHADO
+https://github.com/fmachadoweb
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+</div>
+		
+    <section>
+    <div class="clock">
+		<p id="current_date"></p>
+		<script>
+		date = new Date();
+		year = date.getFullYear();
+		month = date.getMonth() + 1;
+		day = date.getDate();
+		document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+		</script>
+		
+		<br><br>
+        
+		<h1>Minimalist Clock</h1>
+
+
+        <span>00:00:00</span>
+        
+        <br><br>
+		
+		<p>Coded with <span style="color:#FF0000; font-size:15px;">&#10084;</span> By <a href="https://github.com/fmachadoweb" target="_blank">Fernando Machado</a></p>
+
+    </div> 
+    
+    </section>
+    <script src="js/clock.js"></script>
+
+
+</body>
+</html>
